@@ -1,20 +1,36 @@
 //
 import React from 'react';
-const Main2 = () =>{
-   const root = document.getElementById('right-box');
-   let from = document.createElement("div");
-   from.innerText = "출발지";
-   root.appendChild(from);
-  // let from_text = document.createElement("")
-   //root.appendChild("")
-}
 const Main = () =>{
-    return(
-        <div>
-            출발지
-        </div>
-        
-    )
+
+    let mediaQuery = window.matchMedia('(max-width: 1600px)');
+    console.log(mediaQuery);
+    if(mediaQuery.matches){
+        return(
+            <div id="FromAndTo">
+                <div class = "box-wrapper">
+                출발지 :&nbsp;<input type="text" id="fromdrection"/>
+                </div>
+                <div class = "box-wrapper">
+                도착지 :&nbsp;<input type="text" id="todrection"/>
+                </div>
+            </div>
+        )
+    }else{
+        return(
+            <div id="FromAndTo">
+                <div class = "box-wrapper">
+                출발지 :&nbsp;<input type="text" id="fromdrection"/>
+                </div>
+                <div class = "box-wrapper">
+                도착지 :&nbsp;<input type="text" id="todrection"/>
+                </div>
+                <div id="loginAndSignup">
+                    <button id="login">Login</button><button id="signup">Sign Up</button>
+                </div>
+            </div>
+        )
+    }
+    
 }
 
 

@@ -33,4 +33,38 @@ footer{
 #right-box {
     width : 20%;
     height : 100%;
+    font : 20px solid black;
+}
+
+#todriection #fromdrection{
+    width : 100%;
+    margin-right : 10px;
+}
+#loginAndSignup{
+    margin : auto;
+}
+#login, #signup{
+    margin-top : 10px;
+    height : 20px;
+    width : 100px;
+}
+#login{
+    margin-left : 20px;
+}
+#signup{
+    margin-left : 100px;
+}
+.box-wrapper{
+    font-size : 20px;
+    display : flex;
+    flex-direction : row;
+}
+@media(max-width : 1300px){
+    .box-wrapper{
+        font-size : 10px;
+    }
+    #todriection #fromdrection{
+    width : 50px;
+    height : 20px;
+    }
 }
